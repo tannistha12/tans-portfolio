@@ -2,15 +2,17 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, X, Star, Sparkles, Code2 } from "lucide-react";
+import { ExternalLink, X, Sparkles, Code2 } from "lucide-react";
 
 interface Project {
   title: string;
   category: string;
-  image: string; // placeholder description or custom generated image path
+  image: string;
   description: string;
+  longDescription: string;
   tags: string[];
   github: string;
+  demo?: string;
   color: string;
   shadowClass: string;
 }
@@ -24,8 +26,10 @@ export default function Projects() {
       category: "ARTIFICIAL INTELLIGENCE",
       image: "linear-gradient(135deg, #00f5d4 0%, #00b4d8 100%)",
       description: "A voice-enabled artificial intelligence assistant designed to simplify daily tasks. (Work In Progress)",
+      longDescription: "",
       tags: ["Ollama", "Python", "Antigravity", "LangChain"],
       github: "https://github.com/tannistha12/jarvis-ai",
+      demo: "",
       color: "border-[#00f5d4] text-[#00f5d4]",
       shadowClass: "retro-shadow-teal"
     },
@@ -34,8 +38,10 @@ export default function Projects() {
       category: "WEB DEVELOPMENT",
       image: "linear-gradient(135deg, #ff7b00 0%, #ff007f 100%)",
       description: "Personal portfolio website featuring projects, machine learning interests, technical skills, and interactive 3D UI experiences..",
+      longDescription: "",
       tags: ["Next.js", "Three.js", "Framer Motion", "Tailwind CSS", "TypeScript", "Github", "Deployed on Vercel"],
       github: "https://github.com/tannistha12/tans-portfolio",
+      demo: "",
       color: "border-[#ff7b00] text-[#ff7b00]",
       shadowClass: "retro-shadow-orange"
     },
@@ -44,8 +50,10 @@ export default function Projects() {
       category: "DATA SCIENCE & WAREHOUSING",
       image: "linear-gradient(135deg, #ff007f 0%, #9d4edd 100%)",
       description: "This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.",
+      longDescription: "",
       tags: ["Python", "MySQL Server"],
       github: "https://github.com/tannistha12/sql-data-warehouse-project",
+      demo: "",
       color: "border-[#ff007f] text-[#ff007f]",
       shadowClass: "retro-shadow-pink"
     },
@@ -54,8 +62,10 @@ export default function Projects() {
       category: "NATURAL LANGUAGE PROCESSING",
       image: "linear-gradient(135deg, #00f5d4 0%, #00b4d8 100%)",
       description: "An end-to-end Sentiment Analysis & Feedback Insights project built during my internship at Ajinkya Creation Pvt. Ltd. This Streamlit-powered app lets users upload their own CSV files and instantly visualize customer sentiment — Positive, Negative, or Neutral — in a clean, interactive dashboard.",
+      longDescription: "",
       tags: ["Python", "Streamlit", "Pandas", "Matplotlib", "Seaborn"],
       github: "https://github.com/tannistha12/feedback-sentiment-analyzer",
+      demo: "",
       color: "border-[#00f5d4] text-[#00f5d4]",
       shadowClass: "retro-shadow-teal"
     }
@@ -241,13 +251,17 @@ export default function Projects() {
                     </svg>
                     GITHUB CODE
                   </a>
-                  <a
-                    href={selectedProject.demo}
-                    className="flex-1 flex items-center justify-center gap-2 py-3 border-2 border-[#00f5d4] font-mono text-xs font-bold tracking-wider text-[#00f5d4] hover:bg-[#00f5d4] hover:text-black transition-all rounded-sm interactive-cursor"
-                  >
-                    <ExternalLink size={14} />
-                    LIVE DEPLOYMENT
-                  </a>
+                  {selectedProject.demo && (
+                    <a
+                      href={selectedProject.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 flex items-center justify-center gap-2 py-3 border-2 border-[#00f5d4] font-mono text-xs font-bold tracking-wider text-[#00f5d4] hover:bg-[#00f5d4] hover:text-black transition-all rounded-sm interactive-cursor"
+                    >
+                      <ExternalLink size={14} />
+                      LIVE DEPLOYMENT
+                    </a>
+                  )}
                 </div>
 
               </div>

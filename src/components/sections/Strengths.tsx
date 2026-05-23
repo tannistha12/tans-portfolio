@@ -69,9 +69,6 @@ export default function Strengths() {
                     <h4 className="font-display font-bold text-sm md:text-base text-white dark:text-[#fdfaf2] mb-1">
                       {item.title}
                     </h4>
-                    <p className="text-xs md:text-sm text-muted/80 leading-relaxed font-sans">
-                      {item.desc}
-                    </p>
                   </div>
                 </div>
               ))}
