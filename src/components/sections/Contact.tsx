@@ -12,41 +12,54 @@ export default function Contact() {
   const [success, setSuccess] = useState(false);
 
   const socialLinks = [
-    { 
-      icon: <Mail size={18} />, 
-      href: "mailto:tannistha@example.com", 
-      color: "hover:text-[#ff007f]", 
-      borderClass: "hover:border-[#ff007f]" 
+    {
+      icon: <Mail size={18} />,
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=tannistha.ch@gmail.com",
+      color: "hover:text-[#ff007f]",
+      borderClass: "hover:border-[#ff007f]"
     },
-    { 
+    {
       icon: (
         <svg className="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24">
-          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c-2.761 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c-2.761 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
         </svg>
-      ), 
-      href: "https://linkedin.com/in/tannistha", 
-      color: "hover:text-[#00f5d4]", 
-      borderClass: "hover:border-[#00f5d4]" 
+      ),
+      href: "https://www.linkedin.com/in/tannistha-c-425a09231/",
+      color: "hover:text-[#00f5d4]",
+      borderClass: "hover:border-[#00f5d4]"
     },
-    { 
+    {
       icon: (
         <svg className="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24">
-          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
         </svg>
-      ), 
-      href: "https://github.com/tannistha12", 
-      color: "hover:text-[#9d4edd]", 
-      borderClass: "hover:border-[#9d4edd]" 
+      ),
+      href: "https://github.com/tannistha12",
+      color: "hover:text-[#9d4edd]",
+      borderClass: "hover:border-[#9d4edd]"
     },
-    { 
+    {
       icon: (
         <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
         </svg>
-      ), 
-      href: "https://twitter.com", 
-      color: "hover:text-[#ff7b00]", 
-      borderClass: "hover:border-[#ff7b00]" 
+      ),
+      href: "https://x.com/TChattapadhyay",
+      color: "hover:text-[#ff7b00]",
+      borderClass: "hover:border-[#ff7b00]"
+    },
+    {
+      icon: (
+        <svg
+          className="w-4 h-4 fill-current"
+          viewBox="0 0 24 24"
+        >
+          <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1.5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+        </svg>
+      ),
+      href: "https://instagram.com/tannistha.08",
+      color: "hover:text-[#ff007f]",
+      borderClass: "hover:border-[#ff007f]"
     }
   ];
 
@@ -58,7 +71,7 @@ export default function Contact() {
       tempErrors.name = "Identification signature is required.";
       isValid = false;
     }
-    
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!form.email.trim()) {
       tempErrors.email = "Communication node address is required.";
@@ -102,12 +115,12 @@ export default function Contact() {
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden bg-black/10">
-      
+
       {/* Background neon dots */}
       <div className="absolute top-1/2 left-0 w-80 h-80 rounded-full bg-[#00f5d4]/5 blur-[120px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
-        
+
         {/* Header */}
         <div className="flex flex-col mb-16 items-center">
           <span className="font-mono text-xs font-bold tracking-widest text-[#ff007f] uppercase text-neon-pink">
@@ -119,26 +132,26 @@ export default function Contact() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
+
           {/* Left Column: Tech Info & Socials */}
           <div className="lg:col-span-5 space-y-6">
             <h3 className="font-display font-bold text-xl text-white tracking-wide">
               LET’S ENGINEER TOGETHER
             </h3>
-            
+
             <p className="text-xs md:text-sm text-muted/90 leading-relaxed font-sans">
-              Have an interesting model architecture, a complex web deployment, or a collaborative open-source framework you want to construct? 
+              Have an interesting model architecture, a complex web deployment, or a collaborative open-source framework you want to construct?
               Transmit your details and let's formulate something premium.
             </p>
 
             <div className="space-y-4 font-mono text-xs text-muted/90 pt-4">
               <div className="flex items-center gap-3">
                 <span className="text-[#00f5d4]">&gt;</span>
-                <span>NODE ADDRESS: <strong className="text-white">tannistha@example.com</strong></span>
+                <span>NODE ADDRESS: <strong className="text-white">tannistha.ch@gmail.com</strong></span>
               </div>
               <div className="flex items-center gap-3">
                 <span className="text-[#ff007f]">&gt;</span>
-                <span>AVAILABILITY: <strong className="text-white">ACTIVE FOR DISCUSSIONS</strong></span>
+                <span>AVAILABILITY: <strong className="text-white">OPEN FOR COLLABORATION</strong></span>
               </div>
             </div>
 
@@ -169,11 +182,11 @@ export default function Contact() {
               <div className="absolute inset-0 bg-[#00f5d4]/2.5 pointer-events-none" />
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                
+
                 {/* Name */}
                 <div className="flex flex-col gap-1">
                   <label htmlFor="name" className="font-mono text-[10px] tracking-widest text-[#00f5d4] font-bold">
-                    [ IDENTIFICATION SIGNATURE ]
+                    [ NAME ]
                   </label>
                   <input
                     id="name"
@@ -193,7 +206,7 @@ export default function Contact() {
                 {/* Email */}
                 <div className="flex flex-col gap-1">
                   <label htmlFor="email" className="font-mono text-[10px] tracking-widest text-[#00f5d4] font-bold">
-                    [ COMMUNICATION ADDRESS ]
+                    [ EMAIL ]
                   </label>
                   <input
                     id="email"
@@ -213,7 +226,7 @@ export default function Contact() {
                 {/* Message */}
                 <div className="flex flex-col gap-1">
                   <label htmlFor="message" className="font-mono text-[10px] tracking-widest text-[#00f5d4] font-bold">
-                    [ TRANSMISSION PAYLOAD ]
+                    [ MESSAGE ]
                   </label>
                   <textarea
                     id="message"

@@ -91,16 +91,13 @@ export default function Hero({ onOpenTerminal }: HeroProps) {
               VIEW WORKS
             </button>
 
-            <a
-              href="#cv"
-              onClick={(e) => {
-                e.preventDefault();
-                handleScrollTo("contact");
-              }}
+            <a href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-5 py-3 font-mono text-xs font-bold tracking-widest flex items-center gap-2 hover:text-[#ff7b00] transition-all interactive-cursor"
             >
               <FileText size={14} />
-              DOWNLOAD CV
+              VIEW CV
             </a>
           </motion.div>
         </div>
