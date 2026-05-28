@@ -19,7 +19,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tannistha | Creative Developer & ML Engineer",
+  title: "Tannistha Chattapadhyay",
   description: "A premium retro-futuristic synthwave portfolio built using Next.js, React Three Fiber, Framer Motion, and Web Audio synthesizers.",
   keywords: ["Tannistha", "Portfolio", "Computer Science Engineer", "Machine Learning", "Next.js", "Three.js", "Creative Developer"],
   authors: [{ name: "Tannistha" }],
